@@ -46,6 +46,18 @@ Then you can use like:
 gen playbook-repo my-ansible-playbook
 ```
 
+### See Available commands.
+
+Running the justfile (or alias) without any commands or parameters will print
+the available commands that can be ran.
+
+Assuming the alias is setup as shown above, you can run the following, to get
+the usage description.
+
+```bash
+gen
+```
+
 # LICENSE
 
 This is licensed under the MIT license.

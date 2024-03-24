@@ -19,6 +19,13 @@ doc := '
 
   The above will create a repo from the template in /foo/bar
 
+  By default output of the ansible-playbook are silenced, you can change this
+  behavior by setting verbose prior to running a command.
+
+  Example of using verbose:
+
+  `gen verbose=true [command] [parameters]`
+
   Available Commands:
 '
 [private]
