@@ -1,0 +1,7 @@
+---
+
+# The destination directory to create the files in.
+destination_dir: "~/projects/ansible"
+
+# The project name.
+project_name: "playbook"

@@ -1,0 +1,7 @@
+---
+
+# The destination directory to generate the repo in.
+destination_dir:
+
+# The project name for the repo.
+project_name:

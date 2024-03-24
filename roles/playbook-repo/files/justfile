@@ -1,0 +1,3 @@
+
+run-playbook *ARGS:
+  ansible-playbook ./main.yml "$@"

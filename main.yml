@@ -1,0 +1,9 @@
+---
+- hosts: all
+  roles:
+    - role: playbook-repo
+      tags: playbook-repo
+    - role: playbook
+      tags: playbook
+    - role: repo
+      tags: repo

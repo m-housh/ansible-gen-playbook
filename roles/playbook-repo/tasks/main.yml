@@ -1,0 +1,14 @@
+---
+- name: Create general repo files.
+  ansible.builtin.include_role:
+    name: repo
+
+- name: Copy files.
+  ansible.builtin.copy:
+    src: "files/{{ item }}"
+    dest: "{{ destination_dir }}/{{ item }}"
+  with_items:
+    - "ansible.cfg"
+    - "inventory.ini"
+    - "justfile"
+

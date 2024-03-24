@@ -1,0 +1,10 @@
+---
+- name: Ensure destination directory.
+  ansible.builtin.file:
+    path: "{{ destination_dir }}"
+    state: directory
+
+- name: Generate playbook template.
+  ansible.builtin.template:
+    src: templates/playbook.yml
+    dest: "{{ destination_dir }}/{{ playbook_name }}.yml"

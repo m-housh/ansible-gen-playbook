@@ -1,0 +1,21 @@
+---
+- name: Create destination directory.
+  ansible.builtin.file:
+    path: "{{ destination_dir }}"
+    state: directory
+
+- name: Copy files.
+  ansible.builtin.copy:
+    src: "files/{{ item }}"
+    dest: "{{ destination_dir }}/{{ item }}"
+  with_items:
+    - ".editorconfig"
+
+- name: Create templated files.
+  ansible.builtin.template:
+    src: "templates/{{ item }}"
+    dest: "{{ destination_dir }}/{{ item }}"
+  with_items:
+    - "README.md"
+    - "LICENSE"
+

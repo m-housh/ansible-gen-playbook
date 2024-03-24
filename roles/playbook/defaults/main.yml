@@ -1,0 +1,7 @@
+---
+
+# The destination directory.
+destination_dir:
+
+# The name of the playbook.
+playbook_name:
